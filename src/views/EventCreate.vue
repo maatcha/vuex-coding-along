@@ -77,7 +77,7 @@ export default {
   },
   methods: {
     createFreshEvent() {
-      const user = this.$store.state.user
+      const user = this.$store.state.user.user
       const id = Math.floor(Math.random() * 10000000)
 
       return {
@@ -94,7 +94,7 @@ export default {
     },
     createEvent() {
       this.$store
-        .dispatch('createEvent', this.event)
+        .dispatch('event/createEvent', this.event)
         .then(() => {
           console.log(this.event)
           this.$router.push({
@@ -103,9 +103,7 @@ export default {
           })
           this.event = this.createFreshEvent()
         })
-        .catch(() => {
-          alert('There was a problem creating your event')
-        })
+        .catch(() => {})
     }
   }
 }
