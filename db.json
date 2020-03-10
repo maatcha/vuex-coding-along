@@ -357,6 +357,20 @@
       "date": "",
       "time": "",
       "attendees": []
+    },
+    {
+      "id": 328003,
+      "category": "education",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "learn code",
+      "description": "",
+      "location": "home",
+      "date": "2020-03-05T15:21:00.000Z",
+      "time": "17:00",
+      "attendees": []
     }
   ]
 }
